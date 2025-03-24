@@ -13,9 +13,6 @@ fetch("https://json-server-by-bob.vercel.app/characters")
     });
 
 
-
-
-
 function displayDetails(character) {
     document.getElementById("name").textContent = character.name;
     document.getElementById("image").src = character.image;
@@ -30,12 +27,15 @@ document.getElementById("votes-form").addEventListener("submit", function(e) {
 
     let votes = document.getElementById("votes").value;  
     let voteCount = document.getElementById("vote-count");
+    let addeVotes = parseInt(votesInput.value) || 0;
+    let newVoteCount = currentCharacter.votes + addedVotes;
 
     
 
-    voteCount.textContent = Number(voteCount.textContent) + Number(votes);
+    voteCount.textContent = newVoteCount;
+    currentCharacter.votes = newVoteCount;
 
-    document.getElementById("votes").value = "";  
+    
 });
 
 
