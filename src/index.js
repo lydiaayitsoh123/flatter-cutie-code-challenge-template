@@ -39,7 +39,11 @@ document.getElementById("votes-form").addEventListener("submit", function(e) {
     let voteCount = document.getElementById("vote-count");
 
     
-    voteCount.textContent = voteCount.textContent + votes;
+    voteCount.textContent = +voteCount.textContent + +votes;
+
+
+    e.target.reset()
+
 
    
 
@@ -49,5 +53,5 @@ document.getElementById("votes-form").addEventListener("submit", function(e) {
 
 
 document.getElementById("reset-btn").addEventListener("click", function() {
-    document.getElementById("vote-count").textContent = "0";
+    document.getElementById("vote-count").textContent = "";
 });
