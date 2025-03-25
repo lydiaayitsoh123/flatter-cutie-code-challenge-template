@@ -34,9 +34,11 @@ document.getElementById("votes-form").addEventListener("submit", function(e) {
 
     voteCount.textContent = newVoteCount;
     currentCharacter.votes = newVoteCount;
+    
 
     
 });
+
 
 
 
