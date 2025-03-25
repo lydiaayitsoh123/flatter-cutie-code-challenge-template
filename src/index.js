@@ -47,7 +47,7 @@ document.getElementById("votes-form").addEventListener("submit", function(e) {
 
    
 
-    document.getElementById("votes").value = "";  
+    
 });
 
 
