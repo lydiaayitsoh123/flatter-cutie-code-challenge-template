@@ -2,27 +2,16 @@ html {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  text-align: center;
-  
 }
 
 .logo{
   text-align: center;
-  background-color: rgb(49, 109, 179);
+  background-color:rgb(49, 109, 179);
   color : white;
   padding: 0.5em;
-}
-#detailed-info {
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 400px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #character-bar {
@@ -32,7 +21,6 @@ body {
   justify-content: space-around;
   align-items: center;
   padding-bottom: 3vh;
-  flex-wrap: wrap;
 }
 
 #character-bar span {
@@ -45,21 +33,6 @@ body {
   align-items: center;
   border-radius: 2em;
   border: 1px solid white;
-  color: white;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-#character-bar span:hover {
-  background-color: grey;
-}
-
-#image {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-top: 10px;
-
 }
 
 .characterInfo{
@@ -75,27 +48,14 @@ input[type="submit"], button {
   color: white;
   font-size: 18px;
   border-radius: 6px;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  transition: 0.3s;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-input[type="submit"]:hover, button:hover {
-  background-color: blue;
-}
-
-input[type="text"], input[type="number"], input[type="url"] {
+input[type="text"] {
   font-size: 3vh;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 90%;
-  max-width: 300px;
-  display: block;
-  margin: 10px auto;
 }
-#reset-btn{
-  background-color: blue;
-  margin-top: 10px;
+
+#image{
+  width: 300px;
+  height: 300px;
 }

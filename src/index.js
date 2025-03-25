@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded" ,() => {
+    fetchCharacters();
+});
+    let characterBar = document.getElementById("character-bar");
+    let currentCharacter=null;
+
+
 
 fetch("https://json-server-by-bob.vercel.app/characters")
     .then(response => response.json())
@@ -32,8 +39,9 @@ document.getElementById("votes-form").addEventListener("submit", function(e) {
     let voteCount = document.getElementById("vote-count");
 
     
+    voteCount.textContent = voteCount.textContent + votes;
 
-    voteCount.textContent = Number(voteCount.textContent) + Number(votes);
+   
 
     document.getElementById("votes").value = "";  
 });

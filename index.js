@@ -28,7 +28,7 @@ document.getElementById("votes-form").addEventListener("submit", function(e) {
     let votes = document.getElementById("votes").value;  
     let voteCount = document.getElementById("vote-count");
     let addeVotes = parseInt(votesInput.value) || 0;
-    let newVoteCount = currentCharacter.votes + addedVotes;
+    let newVoteCount = currentCharacter.votes  + addedVotes;
 
     
 
