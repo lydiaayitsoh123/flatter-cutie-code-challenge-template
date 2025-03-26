@@ -1,4 +1,8 @@
+document.addEventListener("DOMContentLoaded",()=>{
+       fetchCharacters();
+});
 
+function fetchCharacters()
 fetch("https://json-server-by-bob.vercel.app/characters")
     .then(response => response.json())
     .then(characters => {
